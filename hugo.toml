@@ -4,7 +4,7 @@ languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
 timeZone = "Asia/Shanghai"
 staticDir = ["static", "res"]
-canonifyURLs = true
+canonifyURLs = false
 enableRobotsTXT = true
 
 [permalinks]
