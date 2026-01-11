@@ -1,34 +1,33 @@
 # BlogWeb
 
-Minimal Hugo-based personal site with a resume-style homepage and a blog list.
+一个基于 Hugo 的极简个人站点，包含简历式首页与博客列表页。
 
-## Tech Stack
+## 技术栈
 
-- Hugo (static site generator)
-- Custom templates in `layouts/`
-- Custom styles in `assets/css/custom.css`
+- Hugo（静态站点生成器）
+- 自定义模板：`layouts/`
+- 自定义样式：`assets/css/custom.css`
 
-## Project Structure
+## 目录结构
 
-- `content/` content pages and posts
-- `layouts/` Hugo templates
-- `assets/` CSS and other assets processed by Hugo Pipes
-- `res/` static assets (images, etc.)
+- `content/` 页面与文章内容
+- `layouts/` Hugo 模板
+- `assets/` Hugo Pipes 处理的资源（CSS）
+- `res/` 静态资源（图片等）
 
-## Local Development
+## 本地开发
 
 ```bash
 hugo server -D
 ```
 
-Then open the URL printed in the terminal.
+然后打开终端输出的本地地址。
 
-## Deployment
+## 部署
 
-This repo is configured for GitHub Pages via GitHub Actions.
-Push to `main` and the site will be built and deployed automatically.
+已配置 GitHub Actions 自动部署到 GitHub Pages，推送到 `main` 即可自动构建与发布。
 
-## Notes
+## 备注
 
-- If you change the GitHub Pages path, update `baseURL` in `hugo.toml`.
-- Static files are served from both `static/` and `res/`.
+- 若修改 GitHub Pages 路径，请同步更新 `hugo.toml` 的 `baseURL`。
+- 静态资源来自 `static/` 与 `res/` 两个目录。
