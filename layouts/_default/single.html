@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <article class="paper prose">
+    <header class="article-head">
+      <h1 class="article-title">{{ .Title }}</h1>
+      {{ with .Description }}
+        <p class="article-desc">{{ . }}</p>
+      {{ end }}
+    </header>
+
+    {{ .Content }}
+  </article>
+{{ end }}

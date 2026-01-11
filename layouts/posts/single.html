@@ -1,0 +1,74 @@
+{{ define "main" }}
+
+  <div class="post-shell">
+
+    <!-- 主体文章 -->
+    <article class="paper prose post">
+      <header class="article-head">
+        <h1 class="article-title">{{ .Title }}</h1>
+
+        <div class="article-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+          {{ with .Lastmod }}
+            {{ if gt (.Unix) ($.Date.Unix) }}
+              <span class="dot">·</span>
+              <span>更新于 {{ .Format "2006-01-02" }}</span>
+            {{ end }}
+          {{ end }}
+          {{ with .ReadingTime }}
+            <span class="dot">·</span><span>{{ . }} min</span>
+          {{ end }}
+          {{ with .WordCount }}
+            <span class="dot">·</span><span>{{ . }} 字</span>
+          {{ end }}
+        </div>
+
+        {{ with .Params.tags }}
+          <div class="tag-row" aria-label="Tags">
+            {{ range . }}
+              <a class="tag" href="{{ (printf "/tags/%s/" (urlize .)) | relURL }}">#{{ . }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </header>
+
+      {{ .Content }}
+
+      <!-- 上一篇/下一篇 -->
+      <nav class="post-nav" aria-label="Post navigation">
+        {{ with .PrevInSection }}
+          <a class="post-nav__item" href="{{ .RelPermalink }}">
+            <div class="post-nav__hint">上一篇</div>
+            <div class="post-nav__title">{{ .Title }}</div>
+          </a>
+        {{ else }}
+          <span class="post-nav__item is-empty"></span>
+        {{ end }}
+
+        {{ with .NextInSection }}
+          <a class="post-nav__item" href="{{ .RelPermalink }}">
+            <div class="post-nav__hint">下一篇</div>
+            <div class="post-nav__title">{{ .Title }}</div>
+          </a>
+        {{ else }}
+          <span class="post-nav__item is-empty"></span>
+        {{ end }}
+      </nav>
+    </article>
+
+    <!-- 目录（TOC） -->
+    {{ $toc := .TableOfContents }}
+    {{ if and $toc (ne $toc "<nav id=\"TableOfContents\"></nav>") }}
+      <aside class="toc">
+        <details class="toc__box" open>
+          <summary class="toc__title">目录</summary>
+          <div class="toc__content">
+            {{ $toc | safeHTML }}
+          </div>
+        </details>
+      </aside>
+    {{ end }}
+
+  </div>
+
+{{ end }}

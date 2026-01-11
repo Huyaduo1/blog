@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <section class="paper">
+    <header class="page-head">
+      <h1 class="page-title">#{{ .Title }}</h1>
+      <p class="page-desc">此标签下共 {{ len .Pages }} 篇文章</p>
+    </header>
+
+    <div class="card-grid" aria-label="Tagged post list">
+      {{ range .Pages.ByDate.Reverse }}
+        <a class="card" href="{{ .RelPermalink }}">
+          <div class="card__meta">
+            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+            {{ with .ReadingTime }}<span class="dot">·</span><span>{{ . }} min</span>{{ end }}
+          </div>
+          <h2 class="card__title">{{ .Title }}</h2>
+          {{ with .Summary }}<p class="card__summary">{{ . | plainify }}</p>{{ end }}
+          <div class="card__more">阅读全文 →</div>
+        </a>
+      {{ end }}
+    </div>
+  </section>
+{{ end }}

@@ -1,0 +1,48 @@
+baseURL = "https://YOUR_GITHUB_USERNAME.github.io/"
+title = "你的名字 / Personal Brand"
+languageCode = "zh-cn"
+defaultContentLanguage = "zh-cn"
+timeZone = "Asia/Shanghai"
+
+# 生成更“干净”的链接
+canonifyURLs = true
+enableRobotsTXT = true
+
+# 建议开启：文章 url 为 /posts/xxx/
+[permalinks]
+  posts = "/posts/:slugorfilename/"
+
+# 你的开关：模板里会读取这些 params 来决定是否加载 KaTeX / Mermaid
+[params]
+  katex = true
+  mermaid = true
+
+  # 站点风格信息（可选）
+  author = "你的名字"
+  description = "极简主义书卷风个人品牌与博客"
+  footer = "© 2026 你的名字"
+
+# Hugo 代码高亮（Chroma）
+# Hugo 官方说明：可在配置里设置默认 style。:contentReference[oaicite:1]{index=1}
+[markup]
+  [markup.highlight]
+    style = "gruvbox-light"   # 或改成 solarized-light（若你更偏 Solarized）
+    noClasses = true          # 使用内联样式，省去额外生成 chroma CSS 的步骤
+    lineNos = false
+    tabWidth = 2
+    codeFences = true
+
+  # 允许 Markdown 内使用少量 HTML（写简历时常用）
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Hugo 建议：GitHub Actions 构建时使用 cacheDir 图片缓存
+#（对应 Hugo 官方 GitHub Pages 部署文档里的建议配置）:contentReference[oaicite:2]{index=2}
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
+# 让 /posts/ 保持为 section list 页面
+[taxonomies]
+  tag = "tags"

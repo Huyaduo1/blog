@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section class="paper prose">
+    <header class="page-head">
+      <h1 class="page-title">{{ .Title }}</h1>
+      {{ with .Content }}<div class="page-desc">{{ . }}</div>{{ end }}
+    </header>
+
+    <ul class="simple-list">
+      {{ range .Pages.ByDate.Reverse }}
+        <li class="simple-list__item">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="simple-list__meta">{{ .Date.Format "2006-01-02" }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
