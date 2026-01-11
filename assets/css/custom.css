@@ -510,3 +510,138 @@
     gap: 10px;
   }
   
+/* =========================
+   Resume
+========================= */
+.resume {
+  display: block;
+}
+
+.resume-hero {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.resume-head {
+  flex: 1;
+}
+
+.resume-name {
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.04em;
+}
+
+.resume-title {
+  margin: 6px 0 10px 0;
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 14.5px;
+}
+
+.resume-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-family: var(--font-sans);
+  font-size: 12px;
+}
+
+.resume-tags span {
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+}
+
+.resume-contact a {
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(44, 62, 80, 0.25);
+}
+
+.resume-section {
+  margin-bottom: 22px;
+}
+
+.resume-section h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+.resume-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.2fr 0.8fr;
+}
+
+.resume-item {
+  margin-bottom: 14px;
+}
+
+.resume-item__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-sans);
+  font-size: 14px;
+}
+
+.resume-item__head span {
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.resume-item__sub {
+  color: var(--ink-soft);
+  font-family: var(--font-sans);
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+
+.resume-section ul {
+  margin: 8px 0 0 18px;
+}
+
+.resume-section li {
+  margin: 6px 0;
+}
+
+@media (max-width: 860px) {
+  .resume-hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .resume-avatar {
+    width: 84px;
+    height: 84px;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+}
