@@ -13,7 +13,7 @@
     --shadow: 0 10px 30px rgba(44, 62, 80, 0.10);
   
     --radius: 14px;
-    --maxw: 860px;
+    --maxw: 720px;
   
     --font-serif: "Noto Serif SC",
                   "Source Han Serif SC",
@@ -645,3 +645,35 @@
     grid-template-columns: 1fr;
   }
 }
+
+  /* Post back button */
+  .post-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 10px 0;
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+  .post-back:hover { color: var(--ink); }
+
+
+  /* Post images */
+  .prose img:not(.resume-avatar) {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+
+  .prose img + em {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }

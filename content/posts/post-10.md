@@ -17,6 +17,6 @@ tags: ["简历", "设计"]
 
 ## 图片与链接
 
-![布局](/images/photo-1.jpg)
+![布局](/images/photo-8.jpg)
 
 相关链接：[HTML 规范](https://html.spec.whatwg.org/)

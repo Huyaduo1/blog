@@ -20,6 +20,6 @@ def two_sum(nums, target):
 
 ## 图片与链接
 
-![算法](/images/photo-2.jpg)
+![算法](/images/photo-6.jpg)
 
 相关链接：[LeetCode](https://leetcode.com/)

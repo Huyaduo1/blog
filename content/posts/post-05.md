@@ -16,6 +16,6 @@ $files.Count
 
 ## 图片与链接
 
-![工具](/images/photo-2.jpg)
+![工具](/images/photo-3.jpg)
 
 相关链接：[PowerShell](https://learn.microsoft.com/powershell/)

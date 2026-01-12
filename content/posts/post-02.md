@@ -1,12 +1,10 @@
 ﻿---
-title: "数学公式渲染测试"
+title: "测试二：数学公式渲染测试"
 date: 2026-01-02
 summary: "用清晰的清单打磨节奏感。"
 tags: ["数学", "公式"]
 ---
-
-轻量的清单，比复杂工具更能减少摩擦。
-
+KaTeX进行渲染
 ## 代码片段
 
 ```html
@@ -31,6 +29,6 @@ a & b & c \\
 d & e & f \\
 g & h & i
 \end{matrix}\right|$$
-![晨光](/images/photo-2.jpg)
+
 
 相关链接：[Latex数学公试转化工具](https://www.latexlive.com/)
