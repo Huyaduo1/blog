@@ -18,6 +18,6 @@ tags: ["前端", "设计"]
 
 ## 图片与链接
 
-![纸张](/images/photo-4.jpg)
+![纸张](/images/photo-5.png)
 
 相关链接：[CSS Tricks](https://css-tricks.com/)

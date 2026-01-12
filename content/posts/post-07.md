@@ -15,6 +15,6 @@ tags: ["工程", "复盘"]
 
 ## 图片与链接
 
-![笔记](/images/photo-5.jpg)
+![笔记](/images/photo-6.png)
 
 相关链接：[复盘方法](https://en.wikipedia.org/wiki/After_action_review)
