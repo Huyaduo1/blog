@@ -15,6 +15,6 @@ tags: ["项目", "规划"]
 
 ## 图片与链接
 
-![项目](/blog/images/photo-1.jpg)
+![项目](/images/photo-1.jpg)
 
 相关链接：[敏捷](https://agilemanifesto.org/)

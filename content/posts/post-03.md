@@ -17,6 +17,6 @@ export function clamp(n, min, max) {
 
 ## 图片与链接
 
-![代码](/blog/images/avatar.jpg)
+![代码](/images/avatar.jpg)
 
 相关链接：[MDN JavaScript](https://developer.mozilla.org/)

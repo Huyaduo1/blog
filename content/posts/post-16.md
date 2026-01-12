@@ -15,6 +15,6 @@ tags: ["系统设计", "笔记"]
 
 ## 图片与链接
 
-![系统](/blog/images/photo-1.jpg)
+![系统](/images/photo-1.jpg)
 
 相关链接：[System Design](https://github.com/donnemartin/system-design-primer)

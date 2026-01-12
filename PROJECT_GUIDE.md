@@ -106,8 +106,8 @@ tags: ["标签1", "标签2"]
 正文直接写 Markdown 即可。
 
 ### 6.2 图片引用
-- 图片放在 `res/images/`，浏览器访问路径是 `/blog/images/<file>`（依赖 baseURL）。
-- 例：`![说明](/blog/images/photo-1.jpg)`。
+- 图片放在 `res/images/`，浏览器访问路径是 `/images/<file>`（依赖 baseURL）。
+- 例：`![说明](/images/photo-1.jpg)`。
 
 ### 6.3 数学公式
 - 直接写 `$...$` 或 `$$...$$`。
@@ -252,7 +252,7 @@ function hello(name) {
 
 ### 图片
 
-![说明](/blog/images/photo-1.jpg)
+![说明](/images/photo-1.jpg)
 
 ### 引用
 

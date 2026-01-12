@@ -15,6 +15,6 @@ tags: ["学习", "路线"]
 
 ## 图片与链接
 
-![路线](/blog/images/photo-2.jpg)
+![路线](/images/photo-2.jpg)
 
 相关链接：[MIT OCW](https://ocw.mit.edu/)

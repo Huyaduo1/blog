@@ -17,6 +17,6 @@ SSH 22
 
 ## 图片与链接
 
-![网络](/blog/images/avatar.jpg)
+![网络](/images/avatar.jpg)
 
 相关链接：[IANA](https://www.iana.org/)

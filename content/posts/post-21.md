@@ -15,6 +15,6 @@ tags: ["开源", "协作"]
 
 ## 图片与链接
 
-![开源](/blog/images/avatar.jpg)
+![开源](/images/avatar.jpg)
 
 相关链接：[GitHub](https://github.com/)

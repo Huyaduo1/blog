@@ -18,6 +18,6 @@ tags: ["前端", "设计"]
 
 ## 图片与链接
 
-![纸张](/blog/images/avatar.jpg)
+![纸张](/images/avatar.jpg)
 
 相关链接：[CSS Tricks](https://css-tricks.com/)

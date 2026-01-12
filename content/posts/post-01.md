@@ -16,6 +16,6 @@ ls -la
 
 ## 图片与链接
 
-![纸纹](/blog/images/photo-1.jpg)
+![纸纹](/images/photo-1.jpg)
 
 相关链接：[Hugo 官网](https://gohugo.io/)

@@ -17,6 +17,6 @@ tags: ["周记", "复盘"]
 
 ## 图片与链接
 
-![周记](/blog/images/avatar.jpg)
+![周记](/images/avatar.jpg)
 
 相关链接：[Notion](https://www.notion.so/)

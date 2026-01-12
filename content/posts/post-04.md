@@ -16,6 +16,6 @@ tags: ["阅读", "摘记"]
 
 ## 图片与链接
 
-![书页](/blog/images/photo-1.jpg)
+![书页](/images/photo-1.jpg)
 
 相关链接：[阅读方法](https://www.goodreads.com/)

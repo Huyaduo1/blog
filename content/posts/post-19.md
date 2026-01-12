@@ -15,6 +15,6 @@ tags: ["测试", "工程"]
 
 ## 图片与链接
 
-![测试](/blog/images/photo-1.jpg)
+![测试](/images/photo-1.jpg)
 
 相关链接：[Testing](https://martinfowler.com/testing/)

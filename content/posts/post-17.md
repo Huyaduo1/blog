@@ -15,6 +15,6 @@ tags: ["生活", "习惯"]
 
 ## 图片与链接
 
-![生活](/blog/images/photo-2.jpg)
+![生活](/images/photo-2.jpg)
 
 相关链接：[习惯养成](https://jamesclear.com/atomic-habits)

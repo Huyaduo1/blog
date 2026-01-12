@@ -15,6 +15,6 @@ tags: ["笔记", "效率"]
 
 ## 图片与链接
 
-![笔记](/blog/images/photo-2.jpg)
+![笔记](/images/photo-2.jpg)
 
 相关链接：[Zettelkasten](https://zettelkasten.de/)

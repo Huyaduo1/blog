@@ -15,6 +15,6 @@ hugo --minify
 
 ## 图片与链接
 
-![性能](/blog/images/avatar.jpg)
+![性能](/images/avatar.jpg)
 
 相关链接：[WebPageTest](https://www.webpagetest.org/)

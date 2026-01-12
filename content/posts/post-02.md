@@ -31,6 +31,6 @@ a & b & c \\
 d & e & f \\
 g & h & i
 \end{matrix}\right|$$
-![晨光](/blog/images/photo-2.jpg)
+![晨光](/images/photo-2.jpg)
 
 相关链接：[Latex数学公试转化工具](https://www.latexlive.com/)

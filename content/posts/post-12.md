@@ -15,6 +15,6 @@ tags: ["阅读", "清单"]
 
 ## 图片与链接
 
-![清单](/blog/images/avatar.jpg)
+![清单](/images/avatar.jpg)
 
 相关链接：[豆瓣读书](https://book.douban.com/)
