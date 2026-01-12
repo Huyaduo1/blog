@@ -1,6 +1,6 @@
 ﻿# BlogWeb
 
-一个基于 Hugo 的极简个人站点，包含简历式首页与博客列表页。
+一个基于 Hugo 的极简个人站点：简历式首页 + 博客列表页。主打清爽、好看、好维护 ✨
 
 ## 技术栈
 
@@ -21,13 +21,13 @@
 hugo server -D
 ```
 
-然后打开终端输出的本地地址。
+启动后打开终端输出的本地地址即可预览 ✅
 
 ## 部署
 
-已配置 GitHub Actions 自动部署到 GitHub Pages，推送到 `main` 即可自动构建与发布。
+已配置 GitHub Actions 自动部署到 GitHub Pages，推送到 `main` 即可自动构建与发布 🚀
 
 ## 备注
 
-- 若修改 GitHub Pages 路径，请同步更新 `hugo.toml` 的 `baseURL`。
-- 静态资源来自 `static/` 与 `res/` 两个目录。
+- 如果修改 GitHub Pages 路径，请同步更新 `hugo.toml` 的 `baseURL`。
+- 静态资源来自 `static/` 与 `res/` 两个目录（按需放图即可）🧩

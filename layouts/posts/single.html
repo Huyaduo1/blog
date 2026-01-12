@@ -26,7 +26,7 @@
         {{ with .Params.tags }}
           <div class="tag-row" aria-label="Tags">
             {{ range . }}
-              <a class="tag" href="{{ (printf "/tags/%s/" (urlize .)) | absURL }}">#{{ . }}</a>
+              <a class="tag" href="{{ (printf "tags/%s/" (urlize .)) | relURL }}">#{{ . }}</a>
             {{ end }}
           </div>
         {{ end }}

@@ -18,11 +18,11 @@
   <body>
     <header class="site-header">
       <nav class="nav">
-        <a class="nav__brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+        <a class="nav__brand" href="{{ "" | relURL }}">{{ .Site.Title }}</a>
         <div class="nav__links">
-          <a class="nav__link {{ if .IsHome }}is-active{{ end }}" href="{{ "/" | relURL }}">Home</a>
-          <a class="nav__link {{ if eq .Section "posts" }}is-active{{ end }}" href="{{ "/posts/" | relURL }}">Posts</a>
-          <a class="nav__link {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}is-active{{ end }}" href="{{ "/tags/" | relURL }}">Tags</a>
+          <a class="nav__link {{ if .IsHome }}is-active{{ end }}" href="{{ "" | relURL }}">Home</a>
+          <a class="nav__link {{ if eq .Section "posts" }}is-active{{ end }}" href="{{ "posts/" | relURL }}">Posts</a>
+          <a class="nav__link {{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}is-active{{ end }}" href="{{ "tags/" | relURL }}">Tags</a>
         </div>
       </nav>
     </header>
