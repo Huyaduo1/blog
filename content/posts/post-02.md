@@ -1,22 +1,36 @@
 ﻿---
-title: "日常记录：晨间清单"
+title: "数学公式渲染测试"
 date: 2026-01-02
 summary: "用清晰的清单打磨节奏感。"
-tags: ["生活", "效率"]
+tags: ["数学", "公式"]
 ---
 
 轻量的清单，比复杂工具更能减少摩擦。
 
 ## 代码片段
 
-```text
-- 阅读 30 分钟
-- 复盘昨日任务
-- 规划今日重点
+```html
+$$\sin^2(\theta) + \cos^2(\theta) = 1$$
+$$\sum_{n=1}^\infty k$$
+$$\int_a^b f(x)\,dx$$
+$$\lim\limits_{x\to\infty}\exp(-x) = 0$$
+$$\left|\begin{matrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{matrix}\right|$$
 ```
 
-## 图片与链接
-
+## 数学公式渲染测试
+$$\sin^2(\theta) + \cos^2(\theta) = 1$$
+$$\sum_{n=1}^\infty k$$
+$$\int_a^b f(x)\,dx$$
+$$\lim\limits_{x\to\infty}\exp(-x) = 0$$
+$$\left|\begin{matrix}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{matrix}\right|$$
 ![晨光](/blog/images/photo-2.jpg)
 
-相关链接：[时间管理法](https://en.wikipedia.org/wiki/Time_management)
+相关链接：[Latex数学公试转化工具](https://www.latexlive.com/)

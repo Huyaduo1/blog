@@ -17,4 +17,5 @@ tags: ["数据", "思考"]
 
 ![数据](/blog/images/photo-2.jpg)
 
+
 相关链接：[数据可视化](https://www.data-to-viz.com/)
