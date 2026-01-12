@@ -1,9 +1,9 @@
-<!-- Noto Serif SC（思源宋体风格） -->
+﻿<!-- Noto Serif SC（思源宋体风格）-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
 
-<!-- 自定义 CSS（Hugo Pipes：assets -> fingerprint） -->
+<!-- 自定义CSS（Hugo Pipes：assets -> fingerprint）-->
 {{ $css := resources.Get "css/custom.css" | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}"/>
 

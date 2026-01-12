@@ -1,4 +1,4 @@
-{{ define "main" }}
+﻿{{ define "main" }}
 
   <div class="post-shell">
 
@@ -12,14 +12,14 @@
           {{ with .Lastmod }}
             {{ if gt (.Unix) ($.Date.Unix) }}
               <span class="dot">·</span>
-              <span>更新�?{{ .Format "2006-01-02" }}</span>
+              <span>更新于 {{ .Format "2006-01-02" }}</span>
             {{ end }}
           {{ end }}
           {{ with .ReadingTime }}
             <span class="dot">·</span><span>{{ . }} min</span>
           {{ end }}
           {{ with .WordCount }}
-            <span class="dot">·</span><span>{{ . }} �?/span>
+            <span class="dot">·</span><span>{{ . }} 字</span>
           {{ end }}
         </div>
 
@@ -34,11 +34,11 @@
 
       {{ .Content }}
 
-      <!-- 上一�?下一�?-->
+      <!-- 上一篇下一篇 -->
       <nav class="post-nav" aria-label="Post navigation">
         {{ with .PrevInSection }}
           <a class="post-nav__item" href="{{ .RelPermalink }}">
-            <div class="post-nav__hint">上一�?/div>
+            <div class="post-nav__hint">上一篇</div>
             <div class="post-nav__title">{{ .Title }}</div>
           </a>
         {{ else }}
@@ -47,7 +47,7 @@
 
         {{ with .NextInSection }}
           <a class="post-nav__item" href="{{ .RelPermalink }}">
-            <div class="post-nav__hint">下一�?/div>
+            <div class="post-nav__hint">下一篇</div>
             <div class="post-nav__title">{{ .Title }}</div>
           </a>
         {{ else }}
@@ -56,7 +56,7 @@
       </nav>
     </article>
 
-    <!-- 目录（TOC�?-->
+    <!-- 目录（TOC） -->
     {{ $toc := .TableOfContents }}
     {{ if and $toc (ne $toc "<nav id=\"TableOfContents\"></nav>") }}
       <aside class="toc">
